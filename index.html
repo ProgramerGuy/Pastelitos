@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  
+  body { 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+  }
+
+  .header {
+    overflow: hidden;
+    background-color: #41b9ff;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .header a:hover {
+    background-color: #ddd;
+    color: white;
+  }
+
+  a.active {
+    background-color: #fff;
+    color: #242527;
+  }
+
+  a.active:hover {
+    background-color: rgb(15, 119, 179);
+  }
+
+  .header-right {
+    float: right;
+    margin-right: 10px;
+  }
+
+  input[type=text], select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+    
+  input[type=submit] {
+    width: 100%;
+    background-color: #ef965b;
+    color: white;
+    padding: 7px 10px;
+    margin: 4px 0;
+    height: 80px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #ca782b
+  }
+
+  textarea {
+    width: 100%;
+    height: 75px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+
+  label {
+    padding: 6px 6px 6px 0;
+    display: inline-block;
+  }
+
+  form label {
+    display: block;
+  }
+
+  form p {
+    margin: 0;
+  }
+
+  .header-logo {
+    width: 10%;
+    height: 100%;
+  }
+
+  .header-logo:hover {
+    background-color: #0d8fdb !important;
+  }
+
+  .form-container {
+    width: 40%;
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    margin-top: 20px;
+    background-color: #41b9ff;
+    color: #fff;
+    padding: 50px;
+  }
+
+</style>
+</head>
+<body>
+<header class="header">
+  <a href="" class="header-logo">
+    <img src="Pastelitos-logo.png" alt="" width="50%" height="50%">
+  </a>
+  <section class="header-right">
+    <a class="active" href="./admin.html">Iniciar Sesion</a>
+  </section>
+</header>
+
+<div  class="main-container">
+  <h2>Ordena tu pastel</h2>
+  <section class="form-container">
+        <form action="" class="form">
+          <p>
+            <label for="sabor">Sabor de pastel</label>
+            <select name="sabor" id="sabor">
+              <option value="Fresa">Fresa - $100</option>
+              <option value="Chocolate">Chocolate - $150</option>
+              <option value="Vainilla">Vainilla - $150</option>
+              <option value="Zanahoria">Zanahoria - $300</option>
+              <option value="Napolitano">Napolitano - $350</option>
+            </select>
+          </p>
+          <p>
+            <label for="sabor2">Sabor complementario</label>
+            <select name="sabor2" id="sabor2">
+              <option value="Fresa">Fresa - $100</option>
+              <option value="Chocolate">Chocolate - $150</option>
+              <option value="Vainilla">Vainilla - $150</option>
+              <option value="Zanahoria">Zanahoria - $300</option>
+              <option value="Napolitano">Napolitano - $350</option>
+            </select>
+          </p>
+            <p>
+            <label for="adorno">Adorno</label>
+            <select name="adorno" id="adorno">
+              <option value="Nombre">Nombre - $50</option>
+              <option value="Chispas">Chispas con formas (estrellas, normales, mixtas) - $150 </option>
+              <option value="Adorno Nombre">Adorno de madera con nombre - $200 </option>
+              <option value="Personalizacion">Personalizacion 1 personaje - $200</option>
+            </select>
+            </p>
+            <p>
+              <label for="adorno2">Adorno complementario:</label>
+            <select name="adorno2" id="adornos2">
+              <option value="Nombre">Nombre - $50</option>
+              <option value="Chispas">Chispas con formas (estrellas, normales, mixtas) - $150 </option>
+              <option value="Adorno Nombre">Adorno de madera con nombre - $200 </option>
+              <option value="Personalizacion">Personalizacion 1 personaje - $200</option>
+            </select>
+            </p>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" value=""><br>
+            <label for="telefono">Telefono:</label><br>
+            <input type="text" id="telefono" name="telefono" value=""><br>
+            <label for="correo">Correo:</label><br>
+            <input type="text" id="correo" name="correo" value=""><br>
+            <label for="descripcion">Descripcion:</label><br>
+            <textarea type="text" id="descripcion" name="descripcion" value=""></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+  </section>
+</div>
+
+<footer >
+    <h2>Informacion de negocio</h2>
+    <p> <strong>Direccion:</strong> Distrito universitario, entre alameda y vicentenario</p>
+    <p> <strong>Telefono:</strong> 8674588995</p>
+    <h3>Horarios:</h3>
+    <p> <strong>Lunes a viernes:</strong>  8 a.m. - 8 p.m.</p>
+    <p> <strong>Sabados y domingos:</strong> 9 a.m. - 4 p.m.</p>
+</footer>
+
+</body>
+</html>
